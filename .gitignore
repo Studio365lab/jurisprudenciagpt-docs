@@ -19,5 +19,4 @@ bin-release/
 *.apk
 
 # Hugo
-public/
 /resources/_gen/

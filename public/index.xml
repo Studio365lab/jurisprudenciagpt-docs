@@ -1,11 +1,667 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Jurisprudência GPT</title>
-    <link>https://docs.jurisprudenciagpt.ai/</link>
-    <description>Recent content on Jurisprudência GPT</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="https://docs.jurisprudenciagpt.ai/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jurisprudencia GPT</title><link>http://localhost:1313/</link><description>Recent content on Jurisprudencia GPT</description><generator>Hugo</generator><language>pt-br</language><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>hugo</title><link>http://localhost:1313/commands/hugo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/commands/hugo/</guid><description>&lt;h2 id="hugo">hugo&lt;/h2>
+&lt;p>Build your site&lt;/p>
+&lt;h3 id="synopsis">Synopsis&lt;/h3>
+&lt;p>hugo is the main command, used to build your Hugo site.&lt;/p>
+&lt;p>Hugo is a Fast and Flexible Static Site Generator
+built with love by spf13 and friends in Go.&lt;/p>
+&lt;p>Complete documentation is available at &lt;a href="https://gohugo.io/">https://gohugo.io/&lt;/a>.&lt;/p>
+&lt;pre tabindex="0">&lt;code>hugo [flags]
+&lt;/code>&lt;/pre>&lt;h3 id="options">Options&lt;/h3>
+&lt;pre tabindex="0">&lt;code> -b, --baseURL string hostname (and path) to the root, e.g. https://spf13.com/
+ -D, --buildDrafts include content marked as draft
+ -E, --buildExpired include expired content
+ -F, --buildFuture include content with publishdate in the future
+ --cacheDir string filesystem path to cache directory
+ --cleanDestinationDir remove files from destination not found in static directories
+ --clock string set the clock used by Hugo, e.g. --clock 2021-11-06T22:30:00.00+09:00
+ --config string config file (default is hugo.yaml|json|toml)
+ --configDir string config dir (default &amp;#34;config&amp;#34;)
+ -c, --contentDir string filesystem path to content directory
+ --debug debug output
+ -d, --destination string filesystem path to write files to
+ --disableKinds strings disable different kind of pages (home, RSS etc.)
+ --enableGitInfo add Git revision, date, author, and CODEOWNERS info to the pages
+ -e, --environment string build environment
+ --forceSyncStatic copy all files when static is changed.
+ --gc enable to run some cleanup tasks (remove unused cache files) after the build
+ -h, --help help for hugo
+ --ignoreCache ignores the cache directory
+ --ignoreVendorPaths string ignores any _vendor for module paths matching the given Glob pattern
+ -l, --layoutDir string filesystem path to layout directory
+ --logLevel string log level (debug|info|warn|error)
+ --minify minify any supported output format (HTML, XML etc.)
+ --noBuildLock don&amp;#39;t create .hugo_build.lock file
+ --noChmod don&amp;#39;t sync permission mode of files
+ --noTimes don&amp;#39;t sync modification time of files
+ --panicOnWarning panic on first WARNING log
+ --poll string set this to a poll interval, e.g --poll 700ms, to use a poll based approach to watch for file system changes
+ --printI18nWarnings print missing translations
+ --printMemoryUsage print memory usage to screen at intervals
+ --printPathWarnings print warnings on duplicate target paths etc.
+ --printUnusedTemplates print warnings on unused templates.
+ --quiet build in quiet mode
+ --renderSegments strings named segments to render (configured in the segments config)
+ -M, --renderToMemory render to memory (mostly useful when running the server)
+ -s, --source string filesystem path to read files relative from
+ --templateMetrics display metrics about template executions
+ --templateMetricsHints calculate some improvement hints when combined with --templateMetrics
+ -t, --theme strings themes to use (located in /themes/THEMENAME/)
+ --themesDir string filesystem path to themes directory
+ --trace file write trace to file (not useful in general)
+ -v, --verbose verbose output
+ -w, --watch watch filesystem for changes and recreate as needed
+&lt;/code>&lt;/pre>&lt;h3 id="see-also">SEE ALSO&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_build/">hugo build&lt;/a>	 - Build your site&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_completion/">hugo completion&lt;/a>	 - Generate the autocompletion script for the specified shell&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_config/">hugo config&lt;/a>	 - Display site configuration&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_convert/">hugo convert&lt;/a>	 - Convert front matter to another format&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_deploy/">hugo deploy&lt;/a>	 - Deploy your site to a cloud provider&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_env/">hugo env&lt;/a>	 - Display version and environment info&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_gen/">hugo gen&lt;/a>	 - Generate documentation and syntax highlighting styles&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_import/">hugo import&lt;/a>	 - Import a site from another system&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_list/">hugo list&lt;/a>	 - List content&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_mod/">hugo mod&lt;/a>	 - Manage modules&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_new/">hugo new&lt;/a>	 - Create new content&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_server/">hugo server&lt;/a>	 - Start the embedded web server&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_version/">hugo version&lt;/a>	 - Display version&lt;/li>
+&lt;/ul></description></item><item><title>hugo import</title><link>http://localhost:1313/commands/hugo_import/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/commands/hugo_import/</guid><description>&lt;h2 id="hugo-import">hugo import&lt;/h2>
+&lt;p>Import a site from another system&lt;/p>
+&lt;h3 id="synopsis">Synopsis&lt;/h3>
+&lt;p>Import a site from another system.&lt;/p>
+&lt;p>Import requires a subcommand, e.g. &lt;code>hugo import jekyll jekyll_root_path target_path&lt;/code>.&lt;/p>
+&lt;h3 id="options">Options&lt;/h3>
+&lt;pre tabindex="0">&lt;code> -h, --help help for import
+&lt;/code>&lt;/pre>&lt;h3 id="options-inherited-from-parent-commands">Options inherited from parent commands&lt;/h3>
+&lt;pre tabindex="0">&lt;code> --clock string set the clock used by Hugo, e.g. --clock 2021-11-06T22:30:00.00+09:00
+ --config string config file (default is hugo.yaml|json|toml)
+ --configDir string config dir (default &amp;#34;config&amp;#34;)
+ --debug debug output
+ -d, --destination string filesystem path to write files to
+ -e, --environment string build environment
+ --ignoreVendorPaths string ignores any _vendor for module paths matching the given Glob pattern
+ --logLevel string log level (debug|info|warn|error)
+ --quiet build in quiet mode
+ -M, --renderToMemory render to memory (mostly useful when running the server)
+ -s, --source string filesystem path to read files relative from
+ --themesDir string filesystem path to themes directory
+ -v, --verbose verbose output
+&lt;/code>&lt;/pre>&lt;h3 id="see-also">SEE ALSO&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo/">hugo&lt;/a>	 - Build your site&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_import_jekyll/">hugo import jekyll&lt;/a>	 - hugo import from Jekyll&lt;/li>
+&lt;/ul></description></item><item><title>hugo list</title><link>http://localhost:1313/commands/hugo_list/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/commands/hugo_list/</guid><description>&lt;h2 id="hugo-list">hugo list&lt;/h2>
+&lt;p>List content&lt;/p>
+&lt;h3 id="synopsis">Synopsis&lt;/h3>
+&lt;p>List content.&lt;/p>
+&lt;p>List requires a subcommand, e.g. hugo list drafts&lt;/p>
+&lt;h3 id="options">Options&lt;/h3>
+&lt;pre tabindex="0">&lt;code> -h, --help help for list
+&lt;/code>&lt;/pre>&lt;h3 id="options-inherited-from-parent-commands">Options inherited from parent commands&lt;/h3>
+&lt;pre tabindex="0">&lt;code> --clock string set the clock used by Hugo, e.g. --clock 2021-11-06T22:30:00.00+09:00
+ --config string config file (default is hugo.yaml|json|toml)
+ --configDir string config dir (default &amp;#34;config&amp;#34;)
+ --debug debug output
+ -d, --destination string filesystem path to write files to
+ -e, --environment string build environment
+ --ignoreVendorPaths string ignores any _vendor for module paths matching the given Glob pattern
+ --logLevel string log level (debug|info|warn|error)
+ --quiet build in quiet mode
+ -M, --renderToMemory render to memory (mostly useful when running the server)
+ -s, --source string filesystem path to read files relative from
+ --themesDir string filesystem path to themes directory
+ -v, --verbose verbose output
+&lt;/code>&lt;/pre>&lt;h3 id="see-also">SEE ALSO&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo/">hugo&lt;/a>	 - Build your site&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_list_all/">hugo list all&lt;/a>	 - List all content&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_list_drafts/">hugo list drafts&lt;/a>	 - List draft content&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_list_expired/">hugo list expired&lt;/a>	 - List expired content&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_list_future/">hugo list future&lt;/a>	 - List future content&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_list_published/">hugo list published&lt;/a>	 - List published content&lt;/li>
+&lt;/ul></description></item><item><title>hugo list all</title><link>http://localhost:1313/commands/hugo_list_all/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/commands/hugo_list_all/</guid><description>&lt;h2 id="hugo-list-all">hugo list all&lt;/h2>
+&lt;p>List all content&lt;/p>
+&lt;h3 id="synopsis">Synopsis&lt;/h3>
+&lt;p>List all content including draft, future, and expired.&lt;/p>
+&lt;pre tabindex="0">&lt;code>hugo list all [flags] [args]
+&lt;/code>&lt;/pre>&lt;h3 id="options">Options&lt;/h3>
+&lt;pre tabindex="0">&lt;code> -h, --help help for all
+&lt;/code>&lt;/pre>&lt;h3 id="options-inherited-from-parent-commands">Options inherited from parent commands&lt;/h3>
+&lt;pre tabindex="0">&lt;code> --clock string set the clock used by Hugo, e.g. --clock 2021-11-06T22:30:00.00+09:00
+ --config string config file (default is hugo.yaml|json|toml)
+ --configDir string config dir (default &amp;#34;config&amp;#34;)
+ --debug debug output
+ -d, --destination string filesystem path to write files to
+ -e, --environment string build environment
+ --ignoreVendorPaths string ignores any _vendor for module paths matching the given Glob pattern
+ --logLevel string log level (debug|info|warn|error)
+ --quiet build in quiet mode
+ -M, --renderToMemory render to memory (mostly useful when running the server)
+ -s, --source string filesystem path to read files relative from
+ --themesDir string filesystem path to themes directory
+ -v, --verbose verbose output
+&lt;/code>&lt;/pre>&lt;h3 id="see-also">SEE ALSO&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_list/">hugo list&lt;/a>	 - List content&lt;/li>
+&lt;/ul></description></item><item><title>hugo list drafts</title><link>http://localhost:1313/commands/hugo_list_drafts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/commands/hugo_list_drafts/</guid><description>&lt;h2 id="hugo-list-drafts">hugo list drafts&lt;/h2>
+&lt;p>List draft content&lt;/p>
+&lt;h3 id="synopsis">Synopsis&lt;/h3>
+&lt;p>List draft content.&lt;/p>
+&lt;pre tabindex="0">&lt;code>hugo list drafts [flags] [args]
+&lt;/code>&lt;/pre>&lt;h3 id="options">Options&lt;/h3>
+&lt;pre tabindex="0">&lt;code> -h, --help help for drafts
+&lt;/code>&lt;/pre>&lt;h3 id="options-inherited-from-parent-commands">Options inherited from parent commands&lt;/h3>
+&lt;pre tabindex="0">&lt;code> --clock string set the clock used by Hugo, e.g. --clock 2021-11-06T22:30:00.00+09:00
+ --config string config file (default is hugo.yaml|json|toml)
+ --configDir string config dir (default &amp;#34;config&amp;#34;)
+ --debug debug output
+ -d, --destination string filesystem path to write files to
+ -e, --environment string build environment
+ --ignoreVendorPaths string ignores any _vendor for module paths matching the given Glob pattern
+ --logLevel string log level (debug|info|warn|error)
+ --quiet build in quiet mode
+ -M, --renderToMemory render to memory (mostly useful when running the server)
+ -s, --source string filesystem path to read files relative from
+ --themesDir string filesystem path to themes directory
+ -v, --verbose verbose output
+&lt;/code>&lt;/pre>&lt;h3 id="see-also">SEE ALSO&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_list/">hugo list&lt;/a>	 - List content&lt;/li>
+&lt;/ul></description></item><item><title>hugo list expired</title><link>http://localhost:1313/commands/hugo_list_expired/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/commands/hugo_list_expired/</guid><description>&lt;h2 id="hugo-list-expired">hugo list expired&lt;/h2>
+&lt;p>List expired content&lt;/p>
+&lt;h3 id="synopsis">Synopsis&lt;/h3>
+&lt;p>List content with a past expiration date.&lt;/p>
+&lt;pre tabindex="0">&lt;code>hugo list expired [flags] [args]
+&lt;/code>&lt;/pre>&lt;h3 id="options">Options&lt;/h3>
+&lt;pre tabindex="0">&lt;code> -h, --help help for expired
+&lt;/code>&lt;/pre>&lt;h3 id="options-inherited-from-parent-commands">Options inherited from parent commands&lt;/h3>
+&lt;pre tabindex="0">&lt;code> --clock string set the clock used by Hugo, e.g. --clock 2021-11-06T22:30:00.00+09:00
+ --config string config file (default is hugo.yaml|json|toml)
+ --configDir string config dir (default &amp;#34;config&amp;#34;)
+ --debug debug output
+ -d, --destination string filesystem path to write files to
+ -e, --environment string build environment
+ --ignoreVendorPaths string ignores any _vendor for module paths matching the given Glob pattern
+ --logLevel string log level (debug|info|warn|error)
+ --quiet build in quiet mode
+ -M, --renderToMemory render to memory (mostly useful when running the server)
+ -s, --source string filesystem path to read files relative from
+ --themesDir string filesystem path to themes directory
+ -v, --verbose verbose output
+&lt;/code>&lt;/pre>&lt;h3 id="see-also">SEE ALSO&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_list/">hugo list&lt;/a>	 - List content&lt;/li>
+&lt;/ul></description></item><item><title>hugo list future</title><link>http://localhost:1313/commands/hugo_list_future/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/commands/hugo_list_future/</guid><description>&lt;h2 id="hugo-list-future">hugo list future&lt;/h2>
+&lt;p>List future content&lt;/p>
+&lt;h3 id="synopsis">Synopsis&lt;/h3>
+&lt;p>List content with a future publication date.&lt;/p>
+&lt;pre tabindex="0">&lt;code>hugo list future [flags] [args]
+&lt;/code>&lt;/pre>&lt;h3 id="options">Options&lt;/h3>
+&lt;pre tabindex="0">&lt;code> -h, --help help for future
+&lt;/code>&lt;/pre>&lt;h3 id="options-inherited-from-parent-commands">Options inherited from parent commands&lt;/h3>
+&lt;pre tabindex="0">&lt;code> --clock string set the clock used by Hugo, e.g. --clock 2021-11-06T22:30:00.00+09:00
+ --config string config file (default is hugo.yaml|json|toml)
+ --configDir string config dir (default &amp;#34;config&amp;#34;)
+ --debug debug output
+ -d, --destination string filesystem path to write files to
+ -e, --environment string build environment
+ --ignoreVendorPaths string ignores any _vendor for module paths matching the given Glob pattern
+ --logLevel string log level (debug|info|warn|error)
+ --quiet build in quiet mode
+ -M, --renderToMemory render to memory (mostly useful when running the server)
+ -s, --source string filesystem path to read files relative from
+ --themesDir string filesystem path to themes directory
+ -v, --verbose verbose output
+&lt;/code>&lt;/pre>&lt;h3 id="see-also">SEE ALSO&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_list/">hugo list&lt;/a>	 - List content&lt;/li>
+&lt;/ul></description></item><item><title>hugo list published</title><link>http://localhost:1313/commands/hugo_list_published/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/commands/hugo_list_published/</guid><description>&lt;h2 id="hugo-list-published">hugo list published&lt;/h2>
+&lt;p>List published content&lt;/p>
+&lt;h3 id="synopsis">Synopsis&lt;/h3>
+&lt;p>List content that is not draft, future, or expired.&lt;/p>
+&lt;pre tabindex="0">&lt;code>hugo list published [flags] [args]
+&lt;/code>&lt;/pre>&lt;h3 id="options">Options&lt;/h3>
+&lt;pre tabindex="0">&lt;code> -h, --help help for published
+&lt;/code>&lt;/pre>&lt;h3 id="options-inherited-from-parent-commands">Options inherited from parent commands&lt;/h3>
+&lt;pre tabindex="0">&lt;code> --clock string set the clock used by Hugo, e.g. --clock 2021-11-06T22:30:00.00+09:00
+ --config string config file (default is hugo.yaml|json|toml)
+ --configDir string config dir (default &amp;#34;config&amp;#34;)
+ --debug debug output
+ -d, --destination string filesystem path to write files to
+ -e, --environment string build environment
+ --ignoreVendorPaths string ignores any _vendor for module paths matching the given Glob pattern
+ --logLevel string log level (debug|info|warn|error)
+ --quiet build in quiet mode
+ -M, --renderToMemory render to memory (mostly useful when running the server)
+ -s, --source string filesystem path to read files relative from
+ --themesDir string filesystem path to themes directory
+ -v, --verbose verbose output
+&lt;/code>&lt;/pre>&lt;h3 id="see-also">SEE ALSO&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_list/">hugo list&lt;/a>	 - List content&lt;/li>
+&lt;/ul></description></item><item><title>hugo mod</title><link>http://localhost:1313/commands/hugo_mod/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/commands/hugo_mod/</guid><description>&lt;h2 id="hugo-mod">hugo mod&lt;/h2>
+&lt;p>Manage modules&lt;/p>
+&lt;h3 id="synopsis">Synopsis&lt;/h3>
+&lt;p>Various helpers to help manage the modules in your project&amp;rsquo;s dependency graph.
+Most operations here requires a Go version installed on your system (&amp;gt;= Go 1.12) and the relevant VCS client (typically Git).
+This is not needed if you only operate on modules inside /themes or if you have vendored them via &amp;ldquo;hugo mod vendor&amp;rdquo;.&lt;/p>
+&lt;p>Note that Hugo will always start out by resolving the components defined in the site
+configuration, provided by a _vendor directory (if no &amp;ndash;ignoreVendorPaths flag provided),
+Go Modules, or a folder inside the themes directory, in that order.&lt;/p></description></item><item><title>hugo mod clean</title><link>http://localhost:1313/commands/hugo_mod_clean/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/commands/hugo_mod_clean/</guid><description>&lt;h2 id="hugo-mod-clean">hugo mod clean&lt;/h2>
+&lt;p>Delete the Hugo Module cache for the current project.&lt;/p>
+&lt;h3 id="synopsis">Synopsis&lt;/h3>
+&lt;p>Delete the Hugo Module cache for the current project.&lt;/p>
+&lt;pre tabindex="0">&lt;code>hugo mod clean [flags] [args]
+&lt;/code>&lt;/pre>&lt;h3 id="options">Options&lt;/h3>
+&lt;pre tabindex="0">&lt;code> --all clean entire module cache
+ -b, --baseURL string hostname (and path) to the root, e.g. https://spf13.com/
+ --cacheDir string filesystem path to cache directory
+ -c, --contentDir string filesystem path to content directory
+ -h, --help help for clean
+ --pattern string pattern matching module paths to clean (all if not set), e.g. &amp;#34;**hugo*&amp;#34;
+ --renderSegments strings named segments to render (configured in the segments config)
+ -t, --theme strings themes to use (located in /themes/THEMENAME/)
+&lt;/code>&lt;/pre>&lt;h3 id="options-inherited-from-parent-commands">Options inherited from parent commands&lt;/h3>
+&lt;pre tabindex="0">&lt;code> --clock string set the clock used by Hugo, e.g. --clock 2021-11-06T22:30:00.00+09:00
+ --config string config file (default is hugo.yaml|json|toml)
+ --configDir string config dir (default &amp;#34;config&amp;#34;)
+ --debug debug output
+ -d, --destination string filesystem path to write files to
+ -e, --environment string build environment
+ --ignoreVendorPaths string ignores any _vendor for module paths matching the given Glob pattern
+ --logLevel string log level (debug|info|warn|error)
+ --quiet build in quiet mode
+ -M, --renderToMemory render to memory (mostly useful when running the server)
+ -s, --source string filesystem path to read files relative from
+ --themesDir string filesystem path to themes directory
+ -v, --verbose verbose output
+&lt;/code>&lt;/pre>&lt;h3 id="see-also">SEE ALSO&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_mod/">hugo mod&lt;/a>	 - Manage modules&lt;/li>
+&lt;/ul></description></item><item><title>hugo mod get</title><link>http://localhost:1313/commands/hugo_mod_get/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/commands/hugo_mod_get/</guid><description>&lt;h2 id="hugo-mod-get">hugo mod get&lt;/h2>
+&lt;p>Resolves dependencies in your current Hugo Project.&lt;/p>
+&lt;h3 id="synopsis">Synopsis&lt;/h3>
+&lt;p>Resolves dependencies in your current Hugo Project.&lt;/p>
+&lt;p>Some examples:&lt;/p>
+&lt;p>Install the latest version possible for a given module:&lt;/p>
+&lt;pre>&lt;code>hugo mod get github.com/gohugoio/testshortcodes
+&lt;/code>&lt;/pre>
+&lt;p>Install a specific version:&lt;/p>
+&lt;pre>&lt;code>hugo mod get github.com/gohugoio/testshortcodes@v0.3.0
+&lt;/code>&lt;/pre>
+&lt;p>Install the latest versions of all direct module dependencies:&lt;/p>
+&lt;pre>&lt;code>hugo mod get
+hugo mod get ./... (recursive)
+&lt;/code>&lt;/pre>
+&lt;p>Install the latest versions of all module dependencies (direct and indirect):&lt;/p></description></item><item><title>hugo mod graph</title><link>http://localhost:1313/commands/hugo_mod_graph/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/commands/hugo_mod_graph/</guid><description>&lt;h2 id="hugo-mod-graph">hugo mod graph&lt;/h2>
+&lt;p>Print a module dependency graph.&lt;/p>
+&lt;h3 id="synopsis">Synopsis&lt;/h3>
+&lt;p>Print a module dependency graph with information about module status (disabled, vendored).
+Note that for vendored modules, that is the version listed and not the one from go.mod.&lt;/p>
+&lt;pre tabindex="0">&lt;code>hugo mod graph [flags] [args]
+&lt;/code>&lt;/pre>&lt;h3 id="options">Options&lt;/h3>
+&lt;pre tabindex="0">&lt;code> -b, --baseURL string hostname (and path) to the root, e.g. https://spf13.com/
+ --cacheDir string filesystem path to cache directory
+ --clean delete module cache for dependencies that fail verification
+ -c, --contentDir string filesystem path to content directory
+ -h, --help help for graph
+ --renderSegments strings named segments to render (configured in the segments config)
+ -t, --theme strings themes to use (located in /themes/THEMENAME/)
+&lt;/code>&lt;/pre>&lt;h3 id="options-inherited-from-parent-commands">Options inherited from parent commands&lt;/h3>
+&lt;pre tabindex="0">&lt;code> --clock string set the clock used by Hugo, e.g. --clock 2021-11-06T22:30:00.00+09:00
+ --config string config file (default is hugo.yaml|json|toml)
+ --configDir string config dir (default &amp;#34;config&amp;#34;)
+ --debug debug output
+ -d, --destination string filesystem path to write files to
+ -e, --environment string build environment
+ --ignoreVendorPaths string ignores any _vendor for module paths matching the given Glob pattern
+ --logLevel string log level (debug|info|warn|error)
+ --quiet build in quiet mode
+ -M, --renderToMemory render to memory (mostly useful when running the server)
+ -s, --source string filesystem path to read files relative from
+ --themesDir string filesystem path to themes directory
+ -v, --verbose verbose output
+&lt;/code>&lt;/pre>&lt;h3 id="see-also">SEE ALSO&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_mod/">hugo mod&lt;/a>	 - Manage modules&lt;/li>
+&lt;/ul></description></item><item><title>hugo mod init</title><link>http://localhost:1313/commands/hugo_mod_init/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/commands/hugo_mod_init/</guid><description>&lt;h2 id="hugo-mod-init">hugo mod init&lt;/h2>
+&lt;p>Initialize this project as a Hugo Module.&lt;/p>
+&lt;h3 id="synopsis">Synopsis&lt;/h3>
+&lt;p>Initialize this project as a Hugo Module.
+It will try to guess the module path, but you may help by passing it as an argument, e.g:&lt;/p>
+&lt;pre>&lt;code>	hugo mod init github.com/gohugoio/testshortcodes
+
+Note that Hugo Modules supports multi-module projects, so you can initialize a Hugo Module
+inside a subfolder on GitHub, as one example.
+&lt;/code>&lt;/pre>
+&lt;pre tabindex="0">&lt;code>hugo mod init [flags] [args]
+&lt;/code>&lt;/pre>&lt;h3 id="options">Options&lt;/h3>
+&lt;pre tabindex="0">&lt;code> -b, --baseURL string hostname (and path) to the root, e.g. https://spf13.com/
+ --cacheDir string filesystem path to cache directory
+ -c, --contentDir string filesystem path to content directory
+ -h, --help help for init
+ --renderSegments strings named segments to render (configured in the segments config)
+ -t, --theme strings themes to use (located in /themes/THEMENAME/)
+&lt;/code>&lt;/pre>&lt;h3 id="options-inherited-from-parent-commands">Options inherited from parent commands&lt;/h3>
+&lt;pre tabindex="0">&lt;code> --clock string set the clock used by Hugo, e.g. --clock 2021-11-06T22:30:00.00+09:00
+ --config string config file (default is hugo.yaml|json|toml)
+ --configDir string config dir (default &amp;#34;config&amp;#34;)
+ --debug debug output
+ -d, --destination string filesystem path to write files to
+ -e, --environment string build environment
+ --ignoreVendorPaths string ignores any _vendor for module paths matching the given Glob pattern
+ --logLevel string log level (debug|info|warn|error)
+ --quiet build in quiet mode
+ -M, --renderToMemory render to memory (mostly useful when running the server)
+ -s, --source string filesystem path to read files relative from
+ --themesDir string filesystem path to themes directory
+ -v, --verbose verbose output
+&lt;/code>&lt;/pre>&lt;h3 id="see-also">SEE ALSO&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_mod/">hugo mod&lt;/a>	 - Manage modules&lt;/li>
+&lt;/ul></description></item><item><title>hugo mod npm</title><link>http://localhost:1313/commands/hugo_mod_npm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/commands/hugo_mod_npm/</guid><description>&lt;h2 id="hugo-mod-npm">hugo mod npm&lt;/h2>
+&lt;p>Various npm helpers.&lt;/p>
+&lt;h3 id="synopsis">Synopsis&lt;/h3>
+&lt;p>Various npm (Node package manager) helpers.&lt;/p>
+&lt;pre tabindex="0">&lt;code>hugo mod npm [command] [flags]
+&lt;/code>&lt;/pre>&lt;h3 id="options">Options&lt;/h3>
+&lt;pre tabindex="0">&lt;code> -h, --help help for npm
+&lt;/code>&lt;/pre>&lt;h3 id="options-inherited-from-parent-commands">Options inherited from parent commands&lt;/h3>
+&lt;pre tabindex="0">&lt;code> --clock string set the clock used by Hugo, e.g. --clock 2021-11-06T22:30:00.00+09:00
+ --config string config file (default is hugo.yaml|json|toml)
+ --configDir string config dir (default &amp;#34;config&amp;#34;)
+ --debug debug output
+ -d, --destination string filesystem path to write files to
+ -e, --environment string build environment
+ --ignoreVendorPaths string ignores any _vendor for module paths matching the given Glob pattern
+ --logLevel string log level (debug|info|warn|error)
+ --quiet build in quiet mode
+ -M, --renderToMemory render to memory (mostly useful when running the server)
+ -s, --source string filesystem path to read files relative from
+ --themesDir string filesystem path to themes directory
+ -v, --verbose verbose output
+&lt;/code>&lt;/pre>&lt;h3 id="see-also">SEE ALSO&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_mod/">hugo mod&lt;/a>	 - Manage modules&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_mod_npm_pack/">hugo mod npm pack&lt;/a>	 - Experimental: Prepares and writes a composite package.json file for your project.&lt;/li>
+&lt;/ul></description></item><item><title>hugo mod npm pack</title><link>http://localhost:1313/commands/hugo_mod_npm_pack/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/commands/hugo_mod_npm_pack/</guid><description>&lt;h2 id="hugo-mod-npm-pack">hugo mod npm pack&lt;/h2>
+&lt;p>Experimental: Prepares and writes a composite package.json file for your project.&lt;/p>
+&lt;h3 id="synopsis">Synopsis&lt;/h3>
+&lt;p>Prepares and writes a composite package.json file for your project.&lt;/p>
+&lt;p>On first run it creates a &amp;ldquo;package.hugo.json&amp;rdquo; in the project root if not already there. This file will be used as a template file
+with the base dependency set.&lt;/p>
+&lt;p>This set will be merged with all &amp;ldquo;package.hugo.json&amp;rdquo; files found in the dependency tree, picking the version closest to the project.&lt;/p></description></item><item><title>hugo mod tidy</title><link>http://localhost:1313/commands/hugo_mod_tidy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/commands/hugo_mod_tidy/</guid><description>&lt;h2 id="hugo-mod-tidy">hugo mod tidy&lt;/h2>
+&lt;p>Remove unused entries in go.mod and go.sum.&lt;/p>
+&lt;pre tabindex="0">&lt;code>hugo mod tidy [flags] [args]
+&lt;/code>&lt;/pre>&lt;h3 id="options">Options&lt;/h3>
+&lt;pre tabindex="0">&lt;code> -b, --baseURL string hostname (and path) to the root, e.g. https://spf13.com/
+ --cacheDir string filesystem path to cache directory
+ -c, --contentDir string filesystem path to content directory
+ -h, --help help for tidy
+ --renderSegments strings named segments to render (configured in the segments config)
+ -t, --theme strings themes to use (located in /themes/THEMENAME/)
+&lt;/code>&lt;/pre>&lt;h3 id="options-inherited-from-parent-commands">Options inherited from parent commands&lt;/h3>
+&lt;pre tabindex="0">&lt;code> --clock string set the clock used by Hugo, e.g. --clock 2021-11-06T22:30:00.00+09:00
+ --config string config file (default is hugo.yaml|json|toml)
+ --configDir string config dir (default &amp;#34;config&amp;#34;)
+ --debug debug output
+ -d, --destination string filesystem path to write files to
+ -e, --environment string build environment
+ --ignoreVendorPaths string ignores any _vendor for module paths matching the given Glob pattern
+ --logLevel string log level (debug|info|warn|error)
+ --quiet build in quiet mode
+ -M, --renderToMemory render to memory (mostly useful when running the server)
+ -s, --source string filesystem path to read files relative from
+ --themesDir string filesystem path to themes directory
+ -v, --verbose verbose output
+&lt;/code>&lt;/pre>&lt;h3 id="see-also">SEE ALSO&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_mod/">hugo mod&lt;/a>	 - Manage modules&lt;/li>
+&lt;/ul></description></item><item><title>hugo mod vendor</title><link>http://localhost:1313/commands/hugo_mod_vendor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/commands/hugo_mod_vendor/</guid><description>&lt;h2 id="hugo-mod-vendor">hugo mod vendor&lt;/h2>
+&lt;p>Vendor all module dependencies into the _vendor directory.&lt;/p>
+&lt;h3 id="synopsis">Synopsis&lt;/h3>
+&lt;p>Vendor all module dependencies into the _vendor directory.
+If a module is vendored, that is where Hugo will look for it&amp;rsquo;s dependencies.&lt;/p>
+&lt;pre tabindex="0">&lt;code>hugo mod vendor [flags] [args]
+&lt;/code>&lt;/pre>&lt;h3 id="options">Options&lt;/h3>
+&lt;pre tabindex="0">&lt;code> -b, --baseURL string hostname (and path) to the root, e.g. https://spf13.com/
+ --cacheDir string filesystem path to cache directory
+ -c, --contentDir string filesystem path to content directory
+ -h, --help help for vendor
+ --renderSegments strings named segments to render (configured in the segments config)
+ -t, --theme strings themes to use (located in /themes/THEMENAME/)
+&lt;/code>&lt;/pre>&lt;h3 id="options-inherited-from-parent-commands">Options inherited from parent commands&lt;/h3>
+&lt;pre tabindex="0">&lt;code> --clock string set the clock used by Hugo, e.g. --clock 2021-11-06T22:30:00.00+09:00
+ --config string config file (default is hugo.yaml|json|toml)
+ --configDir string config dir (default &amp;#34;config&amp;#34;)
+ --debug debug output
+ -d, --destination string filesystem path to write files to
+ -e, --environment string build environment
+ --ignoreVendorPaths string ignores any _vendor for module paths matching the given Glob pattern
+ --logLevel string log level (debug|info|warn|error)
+ --quiet build in quiet mode
+ -M, --renderToMemory render to memory (mostly useful when running the server)
+ -s, --source string filesystem path to read files relative from
+ --themesDir string filesystem path to themes directory
+ -v, --verbose verbose output
+&lt;/code>&lt;/pre>&lt;h3 id="see-also">SEE ALSO&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_mod/">hugo mod&lt;/a>	 - Manage modules&lt;/li>
+&lt;/ul></description></item><item><title>hugo mod verify</title><link>http://localhost:1313/commands/hugo_mod_verify/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/commands/hugo_mod_verify/</guid><description>&lt;h2 id="hugo-mod-verify">hugo mod verify&lt;/h2>
+&lt;p>Verify dependencies.&lt;/p>
+&lt;h3 id="synopsis">Synopsis&lt;/h3>
+&lt;p>Verify checks that the dependencies of the current module, which are stored in a local downloaded source cache, have not been modified since being downloaded.&lt;/p>
+&lt;pre tabindex="0">&lt;code>hugo mod verify [flags] [args]
+&lt;/code>&lt;/pre>&lt;h3 id="options">Options&lt;/h3>
+&lt;pre tabindex="0">&lt;code> -b, --baseURL string hostname (and path) to the root, e.g. https://spf13.com/
+ --cacheDir string filesystem path to cache directory
+ --clean delete module cache for dependencies that fail verification
+ -c, --contentDir string filesystem path to content directory
+ -h, --help help for verify
+ --renderSegments strings named segments to render (configured in the segments config)
+ -t, --theme strings themes to use (located in /themes/THEMENAME/)
+&lt;/code>&lt;/pre>&lt;h3 id="options-inherited-from-parent-commands">Options inherited from parent commands&lt;/h3>
+&lt;pre tabindex="0">&lt;code> --clock string set the clock used by Hugo, e.g. --clock 2021-11-06T22:30:00.00+09:00
+ --config string config file (default is hugo.yaml|json|toml)
+ --configDir string config dir (default &amp;#34;config&amp;#34;)
+ --debug debug output
+ -d, --destination string filesystem path to write files to
+ -e, --environment string build environment
+ --ignoreVendorPaths string ignores any _vendor for module paths matching the given Glob pattern
+ --logLevel string log level (debug|info|warn|error)
+ --quiet build in quiet mode
+ -M, --renderToMemory render to memory (mostly useful when running the server)
+ -s, --source string filesystem path to read files relative from
+ --themesDir string filesystem path to themes directory
+ -v, --verbose verbose output
+&lt;/code>&lt;/pre>&lt;h3 id="see-also">SEE ALSO&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_mod/">hugo mod&lt;/a>	 - Manage modules&lt;/li>
+&lt;/ul></description></item><item><title>hugo new</title><link>http://localhost:1313/commands/hugo_new/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/commands/hugo_new/</guid><description>&lt;h2 id="hugo-new">hugo new&lt;/h2>
+&lt;p>Create new content&lt;/p>
+&lt;h3 id="synopsis">Synopsis&lt;/h3>
+&lt;p>Create a new content file and automatically set the date and title.
+It will guess which kind of file to create based on the path provided.&lt;/p>
+&lt;p>You can also specify the kind with &lt;code>-k KIND&lt;/code>.&lt;/p>
+&lt;p>If archetypes are provided in your theme or site, they will be used.&lt;/p>
+&lt;p>Ensure you run this within the root directory of your site.&lt;/p>
+&lt;h3 id="options">Options&lt;/h3>
+&lt;pre tabindex="0">&lt;code> -h, --help help for new
+&lt;/code>&lt;/pre>&lt;h3 id="options-inherited-from-parent-commands">Options inherited from parent commands&lt;/h3>
+&lt;pre tabindex="0">&lt;code> --clock string set the clock used by Hugo, e.g. --clock 2021-11-06T22:30:00.00+09:00
+ --config string config file (default is hugo.yaml|json|toml)
+ --configDir string config dir (default &amp;#34;config&amp;#34;)
+ --debug debug output
+ -d, --destination string filesystem path to write files to
+ -e, --environment string build environment
+ --ignoreVendorPaths string ignores any _vendor for module paths matching the given Glob pattern
+ --logLevel string log level (debug|info|warn|error)
+ --quiet build in quiet mode
+ -M, --renderToMemory render to memory (mostly useful when running the server)
+ -s, --source string filesystem path to read files relative from
+ --themesDir string filesystem path to themes directory
+ -v, --verbose verbose output
+&lt;/code>&lt;/pre>&lt;h3 id="see-also">SEE ALSO&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo/">hugo&lt;/a>	 - Build your site&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_new_content/">hugo new content&lt;/a>	 - Create new content&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_new_site/">hugo new site&lt;/a>	 - Create a new site (skeleton)&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_new_theme/">hugo new theme&lt;/a>	 - Create a new theme (skeleton)&lt;/li>
+&lt;/ul></description></item><item><title>hugo new content</title><link>http://localhost:1313/commands/hugo_new_content/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/commands/hugo_new_content/</guid><description>&lt;h2 id="hugo-new-content">hugo new content&lt;/h2>
+&lt;p>Create new content&lt;/p>
+&lt;h3 id="synopsis">Synopsis&lt;/h3>
+&lt;p>Create a new content file and automatically set the date and title.
+It will guess which kind of file to create based on the path provided.&lt;/p>
+&lt;p>You can also specify the kind with &lt;code>-k KIND&lt;/code>.&lt;/p>
+&lt;p>If archetypes are provided in your theme or site, they will be used.&lt;/p>
+&lt;p>Ensure you run this within the root directory of your site.&lt;/p>
+&lt;pre tabindex="0">&lt;code>hugo new content [path] [flags]
+&lt;/code>&lt;/pre>&lt;h3 id="options">Options&lt;/h3>
+&lt;pre tabindex="0">&lt;code> -b, --baseURL string hostname (and path) to the root, e.g. https://spf13.com/
+ --cacheDir string filesystem path to cache directory
+ -c, --contentDir string filesystem path to content directory
+ --editor string edit new content with this editor, if provided
+ -f, --force overwrite file if it already exists
+ -h, --help help for content
+ -k, --kind string content type to create
+ --renderSegments strings named segments to render (configured in the segments config)
+ -t, --theme strings themes to use (located in /themes/THEMENAME/)
+&lt;/code>&lt;/pre>&lt;h3 id="options-inherited-from-parent-commands">Options inherited from parent commands&lt;/h3>
+&lt;pre tabindex="0">&lt;code> --clock string set the clock used by Hugo, e.g. --clock 2021-11-06T22:30:00.00+09:00
+ --config string config file (default is hugo.yaml|json|toml)
+ --configDir string config dir (default &amp;#34;config&amp;#34;)
+ --debug debug output
+ -d, --destination string filesystem path to write files to
+ -e, --environment string build environment
+ --ignoreVendorPaths string ignores any _vendor for module paths matching the given Glob pattern
+ --logLevel string log level (debug|info|warn|error)
+ --quiet build in quiet mode
+ -M, --renderToMemory render to memory (mostly useful when running the server)
+ -s, --source string filesystem path to read files relative from
+ --themesDir string filesystem path to themes directory
+ -v, --verbose verbose output
+&lt;/code>&lt;/pre>&lt;h3 id="see-also">SEE ALSO&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_new/">hugo new&lt;/a>	 - Create new content&lt;/li>
+&lt;/ul></description></item><item><title>hugo new site</title><link>http://localhost:1313/commands/hugo_new_site/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/commands/hugo_new_site/</guid><description>&lt;h2 id="hugo-new-site">hugo new site&lt;/h2>
+&lt;p>Create a new site (skeleton)&lt;/p>
+&lt;h3 id="synopsis">Synopsis&lt;/h3>
+&lt;p>Create a new site in the provided directory.
+The new site will have the correct structure, but no content or theme yet.
+Use &lt;code>hugo new [contentPath]&lt;/code> to create new content.&lt;/p>
+&lt;pre tabindex="0">&lt;code>hugo new site [path] [flags]
+&lt;/code>&lt;/pre>&lt;h3 id="options">Options&lt;/h3>
+&lt;pre tabindex="0">&lt;code> -f, --force init inside non-empty directory
+ --format string preferred file format (toml, yaml or json) (default &amp;#34;toml&amp;#34;)
+ -h, --help help for site
+&lt;/code>&lt;/pre>&lt;h3 id="options-inherited-from-parent-commands">Options inherited from parent commands&lt;/h3>
+&lt;pre tabindex="0">&lt;code> --clock string set the clock used by Hugo, e.g. --clock 2021-11-06T22:30:00.00+09:00
+ --config string config file (default is hugo.yaml|json|toml)
+ --configDir string config dir (default &amp;#34;config&amp;#34;)
+ --debug debug output
+ -d, --destination string filesystem path to write files to
+ -e, --environment string build environment
+ --ignoreVendorPaths string ignores any _vendor for module paths matching the given Glob pattern
+ --logLevel string log level (debug|info|warn|error)
+ --quiet build in quiet mode
+ -M, --renderToMemory render to memory (mostly useful when running the server)
+ -s, --source string filesystem path to read files relative from
+ --themesDir string filesystem path to themes directory
+ -v, --verbose verbose output
+&lt;/code>&lt;/pre>&lt;h3 id="see-also">SEE ALSO&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_new/">hugo new&lt;/a>	 - Create new content&lt;/li>
+&lt;/ul></description></item><item><title>hugo new theme</title><link>http://localhost:1313/commands/hugo_new_theme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/commands/hugo_new_theme/</guid><description>&lt;h2 id="hugo-new-theme">hugo new theme&lt;/h2>
+&lt;p>Create a new theme (skeleton)&lt;/p>
+&lt;h3 id="synopsis">Synopsis&lt;/h3>
+&lt;p>Create a new theme (skeleton) called [name] in ./themes.
+New theme is a skeleton. Please add content to the touched files. Add your
+name to the copyright line in the license and adjust the theme.toml file
+according to your needs.&lt;/p>
+&lt;pre tabindex="0">&lt;code>hugo new theme [name] [flags]
+&lt;/code>&lt;/pre>&lt;h3 id="options">Options&lt;/h3>
+&lt;pre tabindex="0">&lt;code> -h, --help help for theme
+&lt;/code>&lt;/pre>&lt;h3 id="options-inherited-from-parent-commands">Options inherited from parent commands&lt;/h3>
+&lt;pre tabindex="0">&lt;code> --clock string set the clock used by Hugo, e.g. --clock 2021-11-06T22:30:00.00+09:00
+ --config string config file (default is hugo.yaml|json|toml)
+ --configDir string config dir (default &amp;#34;config&amp;#34;)
+ --debug debug output
+ -d, --destination string filesystem path to write files to
+ -e, --environment string build environment
+ --ignoreVendorPaths string ignores any _vendor for module paths matching the given Glob pattern
+ --logLevel string log level (debug|info|warn|error)
+ --quiet build in quiet mode
+ -M, --renderToMemory render to memory (mostly useful when running the server)
+ -s, --source string filesystem path to read files relative from
+ --themesDir string filesystem path to themes directory
+ -v, --verbose verbose output
+&lt;/code>&lt;/pre>&lt;h3 id="see-also">SEE ALSO&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_new/">hugo new&lt;/a>	 - Create new content&lt;/li>
+&lt;/ul></description></item><item><title>hugo server</title><link>http://localhost:1313/commands/hugo_server/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/commands/hugo_server/</guid><description>&lt;h2 id="hugo-server">hugo server&lt;/h2>
+&lt;p>Start the embedded web server&lt;/p>
+&lt;h3 id="synopsis">Synopsis&lt;/h3>
+&lt;p>Hugo provides its own webserver which builds and serves the site.
+While hugo server is high performance, it is a webserver with limited options.&lt;/p>
+&lt;p>The &lt;code>hugo server&lt;/code> command will by default write and serve files from disk, but
+you can render to memory by using the &lt;code>--renderToMemory&lt;/code> flag. This can be
+faster in some cases, but it will consume more memory.&lt;/p>
+&lt;p>By default hugo will also watch your files for any changes you make and
+automatically rebuild the site. It will then live reload any open browser pages
+and push the latest content to them. As most Hugo sites are built in a fraction
+of a second, you will be able to save and see your changes nearly instantly.&lt;/p></description></item><item><title>hugo server trust</title><link>http://localhost:1313/commands/hugo_server_trust/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/commands/hugo_server_trust/</guid><description>&lt;h2 id="hugo-server-trust">hugo server trust&lt;/h2>
+&lt;p>Install the local CA in the system trust store.&lt;/p>
+&lt;pre tabindex="0">&lt;code>hugo server trust [flags] [args]
+&lt;/code>&lt;/pre>&lt;h3 id="options">Options&lt;/h3>
+&lt;pre tabindex="0">&lt;code> -h, --help help for trust
+ --uninstall Uninstall the local CA (but do not delete it).
+&lt;/code>&lt;/pre>&lt;h3 id="options-inherited-from-parent-commands">Options inherited from parent commands&lt;/h3>
+&lt;pre tabindex="0">&lt;code> --clock string set the clock used by Hugo, e.g. --clock 2021-11-06T22:30:00.00+09:00
+ --config string config file (default is hugo.yaml|json|toml)
+ --configDir string config dir (default &amp;#34;config&amp;#34;)
+ --debug debug output
+ -d, --destination string filesystem path to write files to
+ -e, --environment string build environment
+ --ignoreVendorPaths string ignores any _vendor for module paths matching the given Glob pattern
+ --logLevel string log level (debug|info|warn|error)
+ --quiet build in quiet mode
+ -M, --renderToMemory render to memory (mostly useful when running the server)
+ -s, --source string filesystem path to read files relative from
+ --themesDir string filesystem path to themes directory
+ -v, --verbose verbose output
+&lt;/code>&lt;/pre>&lt;h3 id="see-also">SEE ALSO&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_server/">hugo server&lt;/a>	 - Start the embedded web server&lt;/li>
+&lt;/ul></description></item><item><title>hugo version</title><link>http://localhost:1313/commands/hugo_version/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/commands/hugo_version/</guid><description>&lt;h2 id="hugo-version">hugo version&lt;/h2>
+&lt;p>Display version&lt;/p>
+&lt;h3 id="synopsis">Synopsis&lt;/h3>
+&lt;p>Display version and environment info. This is useful in Hugo bug reports.&lt;/p>
+&lt;pre tabindex="0">&lt;code>hugo version [flags] [args]
+&lt;/code>&lt;/pre>&lt;h3 id="options">Options&lt;/h3>
+&lt;pre tabindex="0">&lt;code> -h, --help help for version
+&lt;/code>&lt;/pre>&lt;h3 id="options-inherited-from-parent-commands">Options inherited from parent commands&lt;/h3>
+&lt;pre tabindex="0">&lt;code> --clock string set the clock used by Hugo, e.g. --clock 2021-11-06T22:30:00.00+09:00
+ --config string config file (default is hugo.yaml|json|toml)
+ --configDir string config dir (default &amp;#34;config&amp;#34;)
+ --debug debug output
+ -d, --destination string filesystem path to write files to
+ -e, --environment string build environment
+ --ignoreVendorPaths string ignores any _vendor for module paths matching the given Glob pattern
+ --logLevel string log level (debug|info|warn|error)
+ --quiet build in quiet mode
+ -M, --renderToMemory render to memory (mostly useful when running the server)
+ -s, --source string filesystem path to read files relative from
+ --themesDir string filesystem path to themes directory
+ -v, --verbose verbose output
+&lt;/code>&lt;/pre>&lt;h3 id="see-also">SEE ALSO&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo/">hugo&lt;/a>	 - Build your site&lt;/li>
+&lt;/ul></description></item><item><title>Termos de uso</title><link>http://localhost:1313/termos-uso/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/termos-uso/</guid><description>&lt;h2 id="termos-de-uso">Termos de uso&lt;/h2>
+&lt;p>Build your site&lt;/p>
+&lt;h3 id="resumo">Resumo&lt;/h3>
+&lt;p>build is the main command, used to build your Hugo site.&lt;/p>
+&lt;p>Hugo is a Fast and Flexible Static Site Generator
+built with love by spf13 and friends in Go.&lt;/p>
+&lt;p>Complete documentation is available at &lt;a href="https://gohugo.io/">https://gohugo.io/&lt;/a>.&lt;/p>
+&lt;pre tabindex="0">&lt;code>hugo build [flags]
+&lt;/code>&lt;/pre></description></item></channel></rss>

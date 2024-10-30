@@ -1,11 +1,163 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Jurisprudência GPT</title>
-    <link>https://docs.jurisprudenciagpt.ai/</link>
-    <description>Recent content on Jurisprudência GPT</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="https://docs.jurisprudenciagpt.ai/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jurisprudencia GPT</title><link>http://localhost:1313/</link><description>Recent content on Jurisprudencia GPT</description><generator>Hugo</generator><language>pt-br</language><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml"/><item><title>hugo</title><link>http://localhost:1313/commands/hugo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/commands/hugo/</guid><description>&lt;h2 id="hugo">hugo&lt;/h2>
+&lt;p>Build your site&lt;/p>
+&lt;h3 id="synopsis">Synopsis&lt;/h3>
+&lt;p>hugo is the main command, used to build your Hugo site.&lt;/p>
+&lt;p>Hugo is a Fast and Flexible Static Site Generator
+built with love by spf13 and friends in Go.&lt;/p>
+&lt;p>Complete documentation is available at &lt;a href="https://gohugo.io/">https://gohugo.io/&lt;/a>.&lt;/p>
+&lt;pre tabindex="0">&lt;code>hugo [flags]
+&lt;/code>&lt;/pre>&lt;h3 id="options">Options&lt;/h3>
+&lt;pre tabindex="0">&lt;code> -b, --baseURL string hostname (and path) to the root, e.g. https://spf13.com/
+ -D, --buildDrafts include content marked as draft
+ -E, --buildExpired include expired content
+ -F, --buildFuture include content with publishdate in the future
+ --cacheDir string filesystem path to cache directory
+ --cleanDestinationDir remove files from destination not found in static directories
+ --clock string set the clock used by Hugo, e.g. --clock 2021-11-06T22:30:00.00+09:00
+ --config string config file (default is hugo.yaml|json|toml)
+ --configDir string config dir (default &amp;#34;config&amp;#34;)
+ -c, --contentDir string filesystem path to content directory
+ --debug debug output
+ -d, --destination string filesystem path to write files to
+ --disableKinds strings disable different kind of pages (home, RSS etc.)
+ --enableGitInfo add Git revision, date, author, and CODEOWNERS info to the pages
+ -e, --environment string build environment
+ --forceSyncStatic copy all files when static is changed.
+ --gc enable to run some cleanup tasks (remove unused cache files) after the build
+ -h, --help help for hugo
+ --ignoreCache ignores the cache directory
+ --ignoreVendorPaths string ignores any _vendor for module paths matching the given Glob pattern
+ -l, --layoutDir string filesystem path to layout directory
+ --logLevel string log level (debug|info|warn|error)
+ --minify minify any supported output format (HTML, XML etc.)
+ --noBuildLock don&amp;#39;t create .hugo_build.lock file
+ --noChmod don&amp;#39;t sync permission mode of files
+ --noTimes don&amp;#39;t sync modification time of files
+ --panicOnWarning panic on first WARNING log
+ --poll string set this to a poll interval, e.g --poll 700ms, to use a poll based approach to watch for file system changes
+ --printI18nWarnings print missing translations
+ --printMemoryUsage print memory usage to screen at intervals
+ --printPathWarnings print warnings on duplicate target paths etc.
+ --printUnusedTemplates print warnings on unused templates.
+ --quiet build in quiet mode
+ --renderSegments strings named segments to render (configured in the segments config)
+ -M, --renderToMemory render to memory (mostly useful when running the server)
+ -s, --source string filesystem path to read files relative from
+ --templateMetrics display metrics about template executions
+ --templateMetricsHints calculate some improvement hints when combined with --templateMetrics
+ -t, --theme strings themes to use (located in /themes/THEMENAME/)
+ --themesDir string filesystem path to themes directory
+ --trace file write trace to file (not useful in general)
+ -v, --verbose verbose output
+ -w, --watch watch filesystem for changes and recreate as needed
+&lt;/code>&lt;/pre>&lt;h3 id="see-also">SEE ALSO&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_build/">hugo build&lt;/a>	 - Build your site&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_completion/">hugo completion&lt;/a>	 - Generate the autocompletion script for the specified shell&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_config/">hugo config&lt;/a>	 - Display site configuration&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_convert/">hugo convert&lt;/a>	 - Convert front matter to another format&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_deploy/">hugo deploy&lt;/a>	 - Deploy your site to a cloud provider&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_env/">hugo env&lt;/a>	 - Display version and environment info&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_gen/">hugo gen&lt;/a>	 - Generate documentation and syntax highlighting styles&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_import/">hugo import&lt;/a>	 - Import a site from another system&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_list/">hugo list&lt;/a>	 - List content&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_mod/">hugo mod&lt;/a>	 - Manage modules&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_new/">hugo new&lt;/a>	 - Create new content&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_server/">hugo server&lt;/a>	 - Start the embedded web server&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_version/">hugo version&lt;/a>	 - Display version&lt;/li>
+&lt;/ul></description></item><item><title>hugo new</title><link>http://localhost:1313/commands/hugo_new/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/commands/hugo_new/</guid><description>&lt;h2 id="hugo-new">hugo new&lt;/h2>
+&lt;p>Create new content&lt;/p>
+&lt;h3 id="synopsis">Synopsis&lt;/h3>
+&lt;p>Create a new content file and automatically set the date and title.
+It will guess which kind of file to create based on the path provided.&lt;/p>
+&lt;p>You can also specify the kind with &lt;code>-k KIND&lt;/code>.&lt;/p>
+&lt;p>If archetypes are provided in your theme or site, they will be used.&lt;/p>
+&lt;p>Ensure you run this within the root directory of your site.&lt;/p>
+&lt;h3 id="options">Options&lt;/h3>
+&lt;pre tabindex="0">&lt;code> -h, --help help for new
+&lt;/code>&lt;/pre>&lt;h3 id="options-inherited-from-parent-commands">Options inherited from parent commands&lt;/h3>
+&lt;pre tabindex="0">&lt;code> --clock string set the clock used by Hugo, e.g. --clock 2021-11-06T22:30:00.00+09:00
+ --config string config file (default is hugo.yaml|json|toml)
+ --configDir string config dir (default &amp;#34;config&amp;#34;)
+ --debug debug output
+ -d, --destination string filesystem path to write files to
+ -e, --environment string build environment
+ --ignoreVendorPaths string ignores any _vendor for module paths matching the given Glob pattern
+ --logLevel string log level (debug|info|warn|error)
+ --quiet build in quiet mode
+ -M, --renderToMemory render to memory (mostly useful when running the server)
+ -s, --source string filesystem path to read files relative from
+ --themesDir string filesystem path to themes directory
+ -v, --verbose verbose output
+&lt;/code>&lt;/pre>&lt;h3 id="see-also">SEE ALSO&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo/">hugo&lt;/a>	 - Build your site&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_new_content/">hugo new content&lt;/a>	 - Create new content&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_new_site/">hugo new site&lt;/a>	 - Create a new site (skeleton)&lt;/li>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_new_theme/">hugo new theme&lt;/a>	 - Create a new theme (skeleton)&lt;/li>
+&lt;/ul></description></item><item><title>hugo server</title><link>http://localhost:1313/commands/hugo_server/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/commands/hugo_server/</guid><description>&lt;h2 id="hugo-server">hugo server&lt;/h2>
+&lt;p>Start the embedded web server&lt;/p>
+&lt;h3 id="synopsis">Synopsis&lt;/h3>
+&lt;p>Hugo provides its own webserver which builds and serves the site.
+While hugo server is high performance, it is a webserver with limited options.&lt;/p>
+&lt;p>The &lt;code>hugo server&lt;/code> command will by default write and serve files from disk, but
+you can render to memory by using the &lt;code>--renderToMemory&lt;/code> flag. This can be
+faster in some cases, but it will consume more memory.&lt;/p>
+&lt;p>By default hugo will also watch your files for any changes you make and
+automatically rebuild the site. It will then live reload any open browser pages
+and push the latest content to them. As most Hugo sites are built in a fraction
+of a second, you will be able to save and see your changes nearly instantly.&lt;/p></description></item><item><title>hugo server trust</title><link>http://localhost:1313/commands/hugo_server_trust/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/commands/hugo_server_trust/</guid><description>&lt;h2 id="hugo-server-trust">hugo server trust&lt;/h2>
+&lt;p>Install the local CA in the system trust store.&lt;/p>
+&lt;pre tabindex="0">&lt;code>hugo server trust [flags] [args]
+&lt;/code>&lt;/pre>&lt;h3 id="options">Options&lt;/h3>
+&lt;pre tabindex="0">&lt;code> -h, --help help for trust
+ --uninstall Uninstall the local CA (but do not delete it).
+&lt;/code>&lt;/pre>&lt;h3 id="options-inherited-from-parent-commands">Options inherited from parent commands&lt;/h3>
+&lt;pre tabindex="0">&lt;code> --clock string set the clock used by Hugo, e.g. --clock 2021-11-06T22:30:00.00+09:00
+ --config string config file (default is hugo.yaml|json|toml)
+ --configDir string config dir (default &amp;#34;config&amp;#34;)
+ --debug debug output
+ -d, --destination string filesystem path to write files to
+ -e, --environment string build environment
+ --ignoreVendorPaths string ignores any _vendor for module paths matching the given Glob pattern
+ --logLevel string log level (debug|info|warn|error)
+ --quiet build in quiet mode
+ -M, --renderToMemory render to memory (mostly useful when running the server)
+ -s, --source string filesystem path to read files relative from
+ --themesDir string filesystem path to themes directory
+ -v, --verbose verbose output
+&lt;/code>&lt;/pre>&lt;h3 id="see-also">SEE ALSO&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo_server/">hugo server&lt;/a>	 - Start the embedded web server&lt;/li>
+&lt;/ul></description></item><item><title>hugo version</title><link>http://localhost:1313/commands/hugo_version/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/commands/hugo_version/</guid><description>&lt;h2 id="hugo-version">hugo version&lt;/h2>
+&lt;p>Display version&lt;/p>
+&lt;h3 id="synopsis">Synopsis&lt;/h3>
+&lt;p>Display version and environment info. This is useful in Hugo bug reports.&lt;/p>
+&lt;pre tabindex="0">&lt;code>hugo version [flags] [args]
+&lt;/code>&lt;/pre>&lt;h3 id="options">Options&lt;/h3>
+&lt;pre tabindex="0">&lt;code> -h, --help help for version
+&lt;/code>&lt;/pre>&lt;h3 id="options-inherited-from-parent-commands">Options inherited from parent commands&lt;/h3>
+&lt;pre tabindex="0">&lt;code> --clock string set the clock used by Hugo, e.g. --clock 2021-11-06T22:30:00.00+09:00
+ --config string config file (default is hugo.yaml|json|toml)
+ --configDir string config dir (default &amp;#34;config&amp;#34;)
+ --debug debug output
+ -d, --destination string filesystem path to write files to
+ -e, --environment string build environment
+ --ignoreVendorPaths string ignores any _vendor for module paths matching the given Glob pattern
+ --logLevel string log level (debug|info|warn|error)
+ --quiet build in quiet mode
+ -M, --renderToMemory render to memory (mostly useful when running the server)
+ -s, --source string filesystem path to read files relative from
+ --themesDir string filesystem path to themes directory
+ -v, --verbose verbose output
+&lt;/code>&lt;/pre>&lt;h3 id="see-also">SEE ALSO&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="http://localhost:1313/commands/hugo/">hugo&lt;/a>	 - Build your site&lt;/li>
+&lt;/ul></description></item><item><title>Política de Privacidade</title><link>http://localhost:1313/politica-privacidade/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/politica-privacidade/</guid><description>&lt;p>Por favor, leia atentamente os tópicos desta &lt;strong>Política de Privacidade&lt;/strong> e &lt;strong>Proteção de Dados Pessoais&lt;/strong> para compreender nossas políticas sobre seus Dados Pessoais e práticas sobre o tratamento destes dados.&lt;/p>
+&lt;h4 id="seção-1---informações-gerais">SEÇÃO 1 - INFORMAÇÕES GERAIS&lt;/h4>
+&lt;p>A presente Política de Privacidade contém informações sobre coleta, uso, armazenamento, tratamento e proteção dos dados pessoais dos usuários e visitantes do aplicativo &lt;strong>Jurisprudência GPT&lt;/strong>, com a finalidade de demonstrar absoluta transparência quanto ao assunto e esclarecer a todos interessados sobre os tipos de dados que são coletados, os motivos da coleta e a forma como os usuários podem gerenciar ou excluir as suas informações pessoais.&lt;/p></description></item><item><title>Termos de uso</title><link>http://localhost:1313/termos-uso/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:1313/termos-uso/</guid><description>&lt;p>&lt;strong>Termos e condições gerais de uso do aplicativo Jurisprudência GPT&lt;/strong>&lt;/p>
+&lt;p>Os serviços do &lt;strong>Jurisprudência GPT&lt;/strong> são fornecidos pela pessoa jurídica com a seguinte Razão Social/nome: STUDIO 365 SOLUCOES PARA TRANSFORMACAO DIGITAL LTDA, inscrito no CNPJ sob o nº 38.145.260/0001-28, titular da propriedade intelectual sobre software, website, aplicativos, conteúdos e demais ativos relacionados à plataforma Jurisprudência GPT.&lt;/p>
+&lt;h4 id="1-do-objeto">1. Do objeto&lt;/h4>
+&lt;p>A plataforma visa licenciar o uso de seu software, website, aplicativos e demais ativos de propriedade intelectual, fornecendo ferramentas para auxiliar e dinamizar o dia a dia dos seus usuários.
+A plataforma caracteriza-se pela prestação do seguinte serviço: Atendimento Virtual para usuários.
+A plataforma realiza a venda à distância por meio eletrônico dos seguintes produtos ou serviços: Plataforma de Atendimento Virtual multicanal para empresas e organizações.&lt;/p></description></item></channel></rss>
